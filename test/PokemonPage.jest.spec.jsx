@@ -1,4 +1,4 @@
-import React, {act } from 'react'
+import React, { act } from 'react'
 import { render, screen } from '@testing-library/react'
 import axiosMock from 'axios'
 import '@testing-library/jest-dom'
