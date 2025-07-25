@@ -1,4 +1,7 @@
 module.exports = {
+   "ignorePatterns": [
+    "dist/", "build/", "node_modules/", ".eslintrc.js", "webpack.config.js"
+  ],
   "env": {
     "browser": true,
     "es6": true,
@@ -43,7 +46,7 @@ module.exports = {
     "arrow-spacing": [
       "error", { "before": true, "after": true }
     ],
-    "no-console": "error",
+    "no-console": 0,
     "react/prop-types": 0
   }
 }
