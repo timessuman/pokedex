@@ -1,9 +1,12 @@
+// import globals from 'globals'
+
 module.exports = {
    "ignorePatterns": [
     "dist/", "build/", "node_modules/", ".eslintrc.js", "webpack.config.js"
   ],
   "env": {
     "browser": true,
+    "node": true,
     "es6": true,
     "jest/globals": true
   },
@@ -16,7 +19,8 @@ module.exports = {
       "jsx": true
     },
     "ecmaVersion": 2018,
-    "sourceType": "module"
+    "sourceType": "module",
+    // "globals": { ...globals.node }
   },
   "plugins": [
     "react", "jest"
